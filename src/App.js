@@ -8,7 +8,7 @@ import Project1Detail from './Project1Detail';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Mini-Project">
       <div className="min-h-screen bg-brand-bg text-brand-text transition-colors duration-500">
         <Navbar />
         <Routes>
