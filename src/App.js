@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
 import Projects from './Projects';
@@ -8,7 +8,7 @@ import Project1Detail from './Project1Detail';
 
 function App() {
   return (
-    <Router basename="/Mini-Project">
+    <Router>
       <div className="min-h-screen bg-brand-bg text-brand-text transition-colors duration-500">
         <Navbar />
         <Routes>
