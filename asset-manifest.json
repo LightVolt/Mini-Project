@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mini-Project/static/css/main.e1cc6d65.css",
-    "main.js": "/Mini-Project/static/js/main.3a824df5.js",
+    "main.js": "/Mini-Project/static/js/main.77280138.js",
     "static/js/453.5eb9fa48.chunk.js": "/Mini-Project/static/js/453.5eb9fa48.chunk.js",
     "static/media/transcript-preview.png": "/Mini-Project/static/media/transcript-preview.a52fcd79204bdf8622aa.png",
     "static/media/Home.png": "/Mini-Project/static/media/Home.ee623104550917a49f0f.png",
@@ -16,11 +16,11 @@
     "static/media/flutter-login.png": "/Mini-Project/static/media/flutter-login.de27c9f939d7e5588b3e.png",
     "index.html": "/Mini-Project/index.html",
     "main.e1cc6d65.css.map": "/Mini-Project/static/css/main.e1cc6d65.css.map",
-    "main.3a824df5.js.map": "/Mini-Project/static/js/main.3a824df5.js.map",
+    "main.77280138.js.map": "/Mini-Project/static/js/main.77280138.js.map",
     "453.5eb9fa48.chunk.js.map": "/Mini-Project/static/js/453.5eb9fa48.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1cc6d65.css",
-    "static/js/main.3a824df5.js"
+    "static/js/main.77280138.js"
   ]
 }
