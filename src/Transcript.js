@@ -18,7 +18,9 @@ const Transcript = () => {
         
         {/* ปุ่มดาวน์โหลดไฟล์ PDF ต้นฉบับ */}
         <a 
-          href="/Transcript.pdf" 
+          href={`${process.env.PUBLIC_URL}/Transcript.pdf`}
+          target="_blank" 
+          rel="noreferrer"
           download 
           className="flex items-center gap-2 bg-brand-text text-white px-8 py-4 rounded-2xl hover:bg-brand-accent transition shadow-lg font-bold"
         >

@@ -10,7 +10,9 @@ const Resume = () => {
       <div className="flex justify-between items-center mb-12">
         <h1 className="text-4xl font-bold text-brand-text">My <span className="text-brand-primary font-serif italic">Resume</span></h1>
         <a 
-          href="/Siripong_kongsub.pdf" 
+          href={`${process.env.PUBLIC_URL}/Siripong_kongsub.pdf`} 
+          target="_blank" 
+          rel="noreferrer"
           download 
           className="flex items-center gap-2 bg-brand-text text-white px-6 py-3 rounded-2xl hover:bg-brand-accent transition shadow-lg"
         >
