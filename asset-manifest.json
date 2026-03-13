@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Mini-Project/static/css/main.e1cc6d65.css",
+    "main.js": "/Mini-Project/static/js/main.80d96f34.js",
+    "static/js/453.5eb9fa48.chunk.js": "/Mini-Project/static/js/453.5eb9fa48.chunk.js",
+    "static/media/transcript-preview.png": "/Mini-Project/static/media/transcript-preview.a52fcd79204bdf8622aa.png",
+    "static/media/Home.png": "/Mini-Project/static/media/Home.ee623104550917a49f0f.png",
+    "static/media/Favorite.png": "/Mini-Project/static/media/Favorite.73d82fbf60682ec01ad0.png",
+    "static/media/cherry blossom.png": "/Mini-Project/static/media/cherry blossom.785e5aed5b421214a088.png",
+    "static/media/Comment.png": "/Mini-Project/static/media/Comment.276be2dfb0c09467ed9b.png",
+    "static/media/addPost.png": "/Mini-Project/static/media/addPost.cd9b2f27db470d5c0963.png",
+    "static/media/resume-preview.png": "/Mini-Project/static/media/resume-preview.024aeab6ad4240758137.png",
+    "static/media/Signup.png": "/Mini-Project/static/media/Signup.e11eb667169851cd24f0.png",
+    "static/media/Account.png": "/Mini-Project/static/media/Account.71e009ee46c3eb1bb8c1.png",
+    "static/media/Login.png": "/Mini-Project/static/media/Login.de27c9f939d7e5588b3e.png",
+    "static/media/flutter-login.png": "/Mini-Project/static/media/flutter-login.de27c9f939d7e5588b3e.png",
+    "index.html": "/Mini-Project/index.html",
+    "main.e1cc6d65.css.map": "/Mini-Project/static/css/main.e1cc6d65.css.map",
+    "main.80d96f34.js.map": "/Mini-Project/static/js/main.80d96f34.js.map",
+    "453.5eb9fa48.chunk.js.map": "/Mini-Project/static/js/453.5eb9fa48.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1cc6d65.css",
+    "static/js/main.80d96f34.js"
+  ]
+}
