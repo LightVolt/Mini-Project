@@ -10,6 +10,7 @@ const Resume = () => {
       <div className="flex justify-between items-center mb-12">
         <h1 className="text-4xl font-bold text-brand-text">My <span className="text-brand-primary font-serif italic">Resume</span></h1>
         <a 
+          // จุดที่ 1: ใช้ process.env.PUBLIC_URL เพื่อให้ path ถูกต้องเสมอ
           href={`${process.env.PUBLIC_URL}/Siripong_kongsub.pdf`} 
           target="_blank" 
           rel="noreferrer"
@@ -32,7 +33,7 @@ const Resume = () => {
             {/* กล่องการ์ดหลัก */}
             <div className="relative z-10 bg-white p-4 rounded-3xl shadow-xl border border-brand-primary/10 overflow-hidden">
               
-              {/* 1. ส่วนแสดงรูปภาพ (ไม่มีข้อความทับแล้ว) */}
+              {/* ส่วนแสดงรูปภาพ */}
               <div className="aspect-[1/1.4] relative rounded-2xl overflow-hidden bg-gray-50 mb-4">
                 <div 
                   className="absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-all duration-500"
@@ -40,9 +41,9 @@ const Resume = () => {
                 ></div>
               </div>
               
-              {/* 2. ส่วนปุ่มกดด้านล่างรูปภาพ เพื่อความสะดวกในการมองและใช้งาน */}
+              {/* จุดที่ 2: แก้จาก /Siripong_kongsub.pdf เป็น path ที่ถูกต้อง */}
               <a 
-                href="/Siripong_kongsub.pdf" 
+                href={`${process.env.PUBLIC_URL}/Siripong_kongsub.pdf`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full py-3 bg-brand-bg text-brand-text border border-brand-primary/20 rounded-xl flex items-center justify-center gap-2 hover:bg-brand-accent hover:text-white hover:border-brand-accent transition-all duration-300 font-bold shadow-sm"
@@ -54,18 +55,18 @@ const Resume = () => {
             </div>
           </div>
 
-          {/* ข้อมูลติดต่อ (ส่วนเดิม) */}
+          {/* ข้อมูลติดต่อ */}
           <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-brand-primary/10">
             <h3 className="font-bold text-brand-text mb-6 border-b border-brand-primary/20 pb-2 uppercase tracking-wider text-sm">Contact</h3>
             <ul className="space-y-4 text-sm text-gray-600">
-              <li className="flex items-center gap-3"><Mail size={16} className="text-brand-primary" /> {`boomlee2014@gmail.com`}</li>
-              <li className="flex items-center gap-3"><Phone size={16} className="text-brand-primary" /> {`098-495-3281`}</li>
+              <li className="flex items-center gap-3"><Mail size={16} className="text-brand-primary" /> boomlee2014@gmail.com</li>
+              <li className="flex items-center gap-3"><Phone size={16} className="text-brand-primary" /> 098-495-3281</li>
               <li className="flex items-center gap-3"><MapPin size={16} className="text-brand-primary" /> Nonthaburi, Thailand</li>
             </ul>
           </div>
         </div>
 
-        {/* คอลัมน์ขวา: รายละเอียด Resume (ส่วนเดิม) */}
+        {/* คอลัมน์ขวา: รายละเอียด Resume */}
         <div className="w-full lg:w-2/3 space-y-8 text-brand-text">
           <div className="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-pink-100/10 border border-brand-primary/5">
             <h2 className="text-3xl font-bold mb-2">นายศิริพงศ์ คงทรัพย์</h2>

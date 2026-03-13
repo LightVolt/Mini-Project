@@ -2,18 +2,21 @@ import React from 'react';
 import { ExternalLink, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Import รูปภาพโปรเจกต์ของคุณจากโฟลเดอร์ src
+// Import รูปภาพโปรเจกต์ (ตรวจสอบให้แน่ใจว่าไฟล์อยู่ในโฟลเดอร์ src/Pic/)
 import Project1Img from './Pic/flutter-login.png';
 
 const Projects = () => {
+    // รายการโปรเจกต์
     const projectList = [
         {
             id: 1,
             title: "Flutter Project",
             description: "Mobile app development by Flutter",
             image: Project1Img,
-            link: "/project1detail"
+            // ลิงก์ไปยัง Path ที่ตั้งไว้ใน App.js (ไม่ต้องใส่ .js)
+            link: "/project1detail" 
         },
+        // คุณสามารถเพิ่มโปรเจกต์อื่นๆ ต่อท้ายได้ที่นี่
     ];
 
     return (
@@ -32,20 +35,19 @@ const Projects = () => {
                 {projectList.map((project) => (
                     <div key={project.id} className="group cursor-pointer">
 
-                        {/* แก้ไขส่วนกรอบรูปภาพให้พอดี (Contain) และมีพื้นหลังจางๆ */}
+                        {/* กรอบรูปภาพ */}
                         <div className="relative overflow-hidden rounded-2xl mb-8 aspect-video shadow-xl shadow-pink-100/20 bg-white/50 border border-brand-primary/5">
 
-                            {/* Overlay สีชมพูจางๆ สไตล์ซากุระ */}
+                            {/* Overlay ตกแต่ง */}
                             <div className="absolute inset-0 bg-brand-primary/5 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
 
                             <img
                                 src={project.image}
                                 alt={project.title}
-
                                 className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-out relative z-0"
                             />
 
-                            {/* ปุ่มดูรายละเอียดเวลา Hover */}
+                            {/* ปุ่ม View Case Study: ใช้ <Link> เพื่อให้รองรับ HashRouter */}
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 z-20 bg-brand-text/20 backdrop-blur-[2px]">
                                 <Link
                                     to={project.link}
